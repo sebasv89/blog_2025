@@ -1,6 +1,6 @@
-export const siteTitle = "Blog de Sebastian Vélez";
+export const siteTitle = "svelez blog";
 export const siteIntro =
-  "Notas sobre producto, liderazgo en tech, AI y psicología del comportamiento.";
+  "Book Reviews & anotaciones sobre Product Development, Liderazgo, AI y psicología del comportamiento.";
 
 // URL del sitio para SEO/sitemaps (configurable por env en Vercel)
 export const siteUrl =
@@ -9,10 +9,11 @@ export const siteUrl =
 
 // Orden deseado para las categorías (slugs de carpeta en /content)
 export const categoryOrder: string[] = [
+  "reviews-de-libros",
   "liderazgo-en-tech",
   "ai",
-  "sicologia-del-comportamiento",
-  "reviews-de-libros",
+  "sicologia-del-comportamiento"
+ 
 ];
 
 // Mapa opcional de nombres visibles por categoría (clave = slug de carpeta)
