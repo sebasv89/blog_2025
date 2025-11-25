@@ -33,10 +33,11 @@ export default async function PostPage({ params }: ParamsPromise) {
   if (!post) return notFound();
   return (
     <article className="post">
+      <p className="back">
+        <Link href="/" className="back-link">← Volver al inicio</Link>
+      </p>
       <p className="muted">
-        <Link href={`/blog/${post.categorySlug}`} className="link">
-          {post.categoryName}
-        </Link>{" "}
+        <span className="category-label">{post.categoryName}</span>{" "}
         ·{" "}
         <time dateTime={post.date}>
           {new Date(post.date).toLocaleDateString(undefined, {
