@@ -1,0 +1,25 @@
+---
+title: "Primeros pasos con modelos de lenguaje"
+date: "2025-01-15"
+excerpt: "Conceptos base para empezar a usar LLMs en proyectos reales."
+tags: ["ai", "llm", "primeros pasos"]
+category: "AI"
+---
+
+## ¿Por qué LLMs?
+
+Los modelos de lenguaje permiten construir interfaces naturales sobre datos y procesos. La clave práctica es delimitar el contexto, diseñar prompts claros y **evaluar** con casos reales.
+
+### Pilares
+
+- Contexto y grounding
+- Evaluación continua
+- Costos y latencia
+
+```ts
+type ToolCall = { name: string; args: Record<string, unknown> };
+```
+
+> En próximas entradas veremos cómo estructurar herramientas y memorias.
+
+
